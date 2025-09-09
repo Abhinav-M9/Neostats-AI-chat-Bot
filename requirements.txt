@@ -1,0 +1,13 @@
+streamlit
+langchain
+langchain-core
+groq
+google-generativeai
+faiss-cpu
+python-dotenv
+PyPDF2
+python-docx
+requests
+numpy
+beautifulsoup4
+langchain-text-splitters
