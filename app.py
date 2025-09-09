@@ -7,7 +7,6 @@ from utils.web_search import search_web, search_web_duckduckgo
 
 st.set_page_config(
     page_title="NeoStats AI Chatbot",
-    page_icon="🤖",
     layout="wide"
 )
 
@@ -30,7 +29,7 @@ def main():
     if not check_api_keys():
         return
         
-    st.title("🤖 NeoStats AI Chatbot with RAG & Web Search")
+    st.title("NeoStats AI Chatbot with RAG & Web Search")
     if 'messages' not in st.session_state:
         st.session_state.messages = []
     if 'rag_system' not in st.session_state:
@@ -49,7 +48,7 @@ def main():
         
         st.divider()
         
-        st.subheader("📚 Knowledge Base")
+        st.subheader("Knowledge Base")
         uploaded_files = st.file_uploader(
             "Upload documents",
             type=['txt', 'pdf', 'docx'],
@@ -148,3 +147,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
